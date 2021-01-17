@@ -5,6 +5,7 @@ async function commentFormHandler(event) {
 
   const post_id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
+
   ];
 
   if (comment_text) {
@@ -12,7 +13,7 @@ async function commentFormHandler(event) {
       method: 'POST',
       body: JSON.stringify({
         post_id,
-        comment_text
+        comment_text,
       }),
       headers: {
         'Content-Type': 'application/json'
