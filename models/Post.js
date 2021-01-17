@@ -38,8 +38,12 @@ Post.init(
       allowNull: false
     },
     post_content: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(750),
       allowNull: false,
+      validate: {
+        // the content must be at least 1 character long
+        len: [1]
+      }
     },
     user_id: {
       type: DataTypes.INTEGER,
