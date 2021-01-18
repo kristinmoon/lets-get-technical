@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Let's Get Technical</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -12,14 +17,14 @@
   <div class="wrapper">
     <header>
       <h1>
-        <a href="/">Let's Get Technical</a>
+        <a href="/">LET'S GET TECHNICAL</a>
       </h1>
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <a href="/dashboard">DASHBOARD</a>
+        <button id="logout" class="btn-no-style">LOGOUT</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login">LOGIN</a>
         {{/if}}
       </nav>
     </header>
@@ -29,13 +34,15 @@
     </main>
 
     <footer>
-      Thanks for visiting!
+      <i class="material-icons">library_music</i> Let's get technical, technical. I wanna get technical. Let's get into
+      technical.<i class="material-icons">library_music</i>
     </footer>
   </div>
 
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
 </body>
 

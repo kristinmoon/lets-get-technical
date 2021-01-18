@@ -1,20 +1,21 @@
 * {
   box-sizing: border-box;
   background-color: rgb(12, 12, 12);
+  color:#f6f6f6;
+
 }
 
 body, html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: G;
-  color:#f6f6f6;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
   text-decoration: none;
   color:#39e28d;
-  font-weight: bold;
+  /* font-weight: bold; */
   transition: color .1s;
 }
 
@@ -40,6 +41,10 @@ button:hover {
 .post-list {
   margin: 0;
   padding: 0;
+}
+
+.text {
+    background-color: transparent;
 }
 
 textarea, input {
@@ -76,7 +81,7 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,7 +103,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #7c00ff;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -126,7 +131,7 @@ main {
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
+  /* color: #7d7d7d; */
 }
 
 .edit-link {
@@ -144,13 +149,14 @@ main {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: #1a1918;
 }
 
 .comment .meta {
   font-size: 90%;
   margin-bottom: .5%;
   opacity: .6;
+  background-color: transparent;
 }
 
 .new-post-form input {
@@ -162,7 +168,7 @@ main {
 }
 
 footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid;
   display: flex;
   justify-content: center;
   padding: 1%;
